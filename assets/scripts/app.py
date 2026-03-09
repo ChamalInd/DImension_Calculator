@@ -1,6 +1,5 @@
 import sys
 import math
-import pywinstyles
 import assets.scripts.variables as vary
 
 from PyQt5.QtGui import *
@@ -884,6 +883,5 @@ def main():
     styleSheet = open(f'assets/styles/theme.qss', 'r').read()
     app.setStyleSheet(styleSheet)
     window = MainWindow()
-    pywinstyles.apply_style(window, 'dark')
     window.show()
     app.exec()
